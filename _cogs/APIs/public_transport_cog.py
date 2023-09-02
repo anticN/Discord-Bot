@@ -162,7 +162,7 @@ class PublicTransportCog(commands.Cog):
         except Exception as e:
             await interaction.response.send_message(f"API not responding, try again.")
 
-    @app_commands.command(name="test-embed", description="sexy-embed")
+    @app_commands.command(name="test-embed", description="embed")
     async def embed_test(self, interaction: discord.Interaction, member: discord.Member = None):
         if member is None:
             member = interaction.message.author
